@@ -1,3 +1,29 @@
+// --> Resets
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	font-family: Roboto, sans-serif;
+	-webkit-tap-highlight-color: transparent;
+}
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #344767;
+}
+
 .App {
-  text-align: center;
+	width: 100vw;
+	height: 100vh;
+	background-color: #f8f9fa;
+	display: flex;
 }
