@@ -12,7 +12,10 @@ const validationYupSchema = yup.object({
     password: yup.string()
         .min(8, 'Password is too Short!')
         .max(25, 'Password is too Long!')
-        .matches(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z])$/gm, "Please Enter Valid Password")
+        .matches(
+            /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/,
+            `Must Contain Uppercase, Lowercase,
+            Number and special case Character`)
         .required('Password is required field')
 });
 
