@@ -5,9 +5,10 @@ import CustomField from '../../components/CustomField';
 import Rocket from '../../assets/images/rocket.png'
 
 const validationYupSchema = yup.object({
-    name: yup.string().min(2, 'Name is too Short!')
-        .max(36, 'Name is too Long!')
-        .required('Name is required field'),
+    email: yup.string()
+        .email('Must be a valid email')
+        .max(255)
+        .required('Email is required'),
     password: yup.string()
         .min(8, 'Password is too Short!')
         .max(25, 'Password is too Long!')
@@ -37,11 +38,11 @@ export default class Signup extends Component {
                                             Signup
                                         </div>
                                         < CustomField
-                                            label="Name:"
-                                            name="name"
-                                            type="text"
-                                            errors={errors.name}
-                                            touched={touched.name}
+                                            label="Email:"
+                                            name="email"
+                                            type="email"
+                                            errors={errors.email}
+                                            touched={touched.email}
                                         />
                                         < CustomField
                                             label="Password:"
