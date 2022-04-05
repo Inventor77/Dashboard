@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import "./App.scss";
-import SignupPage from "./pages/signup";
+import LoginPage from "./pages/login";
 
 export default class App extends Component {
 	render() {
 		return (
 			<div className="App">
-				<SignupPage />
+				<LoginPage />
 			</div>
 		);
 	}

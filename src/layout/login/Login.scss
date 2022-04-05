@@ -1,0 +1,15 @@
+.googleButton {
+	height: 42px !important;
+	width: 100% !important;
+    border-radius: 6px 6px 6px 6px !important;
+    margin: 24px 0 16px 0 !important;
+	div {
+		height: 40px !important;
+		width: 40px !important;
+        border-radius: 6px 0 0 6px !important;
+		svg {
+			height: 40px !important;
+			width: 40px !important;
+		}
+	}
+}

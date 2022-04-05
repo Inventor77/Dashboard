@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
 import { Formik, Form } from 'formik';
 import * as yup from 'yup';
+import GoogleButton from 'react-google-button';
 import CustomField from '../../components/CustomField';
 import Rocket from '../../assets/images/rocket.png'
+import './Login.scss'
 
 const validationYupSchema = yup.object({
     name: yup.string().min(2, 'Name is too Short!')
@@ -49,6 +51,9 @@ export default class Login extends Component {
                                             type="password"
                                             errors={errors.password}
                                             touched={touched.password}
+                                        />
+                                        <GoogleButton className='googleButton'
+                                            // style={{ width: '100%', height: '40px' }}
                                         />
                                         <button className="inline-block self-end bg-cyan-700 text-white font-bold rounded-lg px-8 py-2 uppercase text-sm" type="submit">Submit</button>
                                         <div className="text-sm">
