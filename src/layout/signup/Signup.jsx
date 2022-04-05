@@ -15,7 +15,7 @@ const validationYupSchema = yup.object({
         .required('Password is required field')
 });
 
-export default class Login extends Component {
+export default class Signup extends Component {
     render() {
         return (
             <div className='login_layout flex w-full min-h-screen justify-center items-center'>
@@ -34,7 +34,7 @@ export default class Login extends Component {
                                         className='flex flex-col justify-between space-y-4 text-gray-600 md:w-80 h-96'
                                     >
                                         <div className="text-2xl text-gray-400 font-bold">
-                                            Login
+                                            Signup
                                         </div>
                                         < CustomField
                                             label="Name:"
@@ -52,8 +52,8 @@ export default class Login extends Component {
                                         />
                                         <button className="inline-block self-end bg-cyan-700 text-white font-bold rounded-lg px-8 py-2 uppercase text-sm" type="submit">Submit</button>
                                         <div className="text-sm">
-                                            Not have an account?
-                                            <span className='underline text-teal-500 ml-2 cursor-pointer'>Create your account</span>
+                                            Already have an account?
+                                            <span className='underline text-teal-500 ml-2 cursor-pointer'>Login</span>
                                         </div>
                                     </Form>
                                 )}
